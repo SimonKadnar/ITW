@@ -1,0 +1,347 @@
+/*
+ * Login: xkadna00
+ *
+ * Doplnte sve reseni.
+ *
+ * Nezapomente pridat strucne hromadne komentare pro pravidla jednotlivych sekci
+ * a pro netrivialni useky kodu (napr. bubliny v sekci #refs)
+ */
+
+*{font-family: "PT Sans"; line-height: 1.7;}
+p{ font-size: 18px; color: #898989;}
+h1{font-size: 40px;}
+h2{font-size: 32px;}
+h3{font-size: 24px;}
+h4{color: #898989;}
+a{ text-decoration: none;} 
+ 
+/*HEAD*/ 
+
+    header{ background-image: url("../img/header.jpg"); 
+            height: 100vh;
+            min-height: 800px;
+            background-size: cover;
+            margin: auto;}
+
+    .content{max-width:1200px;  /*velikost strnaky + centrovanie*/
+            min-width:768px;
+            margin: auto;}  
+
+    #logo a{font-family: "Special Elite";
+            font-size: 25px;
+            color:steelblue;
+            text-align: left;}
+    #logo a:hover{color:white;}
+    #logo i{ font-size: 25px;
+             color:steelblue ;}
+
+    #contacts { text-align: right;
+                color:grey;
+                letter-spacing: .05em}
+    #contacts i{color:steelblue;
+                padding: 5px;}
+    #contacts a{color:grey;}
+    #contacts a:hover{color:white;}
+
+    #networks {float: right;}/*ikony*/
+    #networks i{font-size: 25px;
+                color:steelblue;
+                padding: 5px; }
+    #networks i:hover{color:white;}
+
+    #navigation ul{display: flex;
+                   margin: 0;
+                   padding: 0; }
+    #navigation li{list-style-type: none;}
+    #navigation a{color:#bfbfbf;
+                  font-family:Arial;
+                  font-size: 18px;
+                  border: 1px solid;
+                  padding: 5px 20px;
+                  border-color: transparent;}
+    #navigation a:hover{border-color: #4d4d4d;
+                        transition: 0.5s;}
+
+    #header-title h1{font-size: 64px;
+                     font-family: sans-serif;
+                     color:white ;
+                     padding-top:300px;
+                     padding-bottom: 20px; 
+                     padding-left: 20px;}
+
+    #get-started a{ color :grey;
+                    font-size: 18px; 
+                    border: 2px solid; 
+                    border-radius: 15px; 
+                    border-color: #4d4d4d; 
+                    padding: 20px; 
+                    margin-left: 20px;} 
+    #get-started a:hover{background-color:steelblue; 
+                         color:white; 
+                         border-color: #4d4d4d; 
+                         transition: 0.5s;}
+
+/*SERVICES*/
+
+    #services{text-align: center; 
+              background-color: white; 
+              overflow:auto; 
+              padding-bottom: 40px; 
+              min-width: 1000px;}
+
+    #services h2{font-size: 40px;}
+
+    img:not(:first-child){display: none;}   /* odstranenie blieych obrazkov*/
+    .services-column:hover img:not(:first-child) {display: unset;} /*zobrazenie bieleho obrazka*/
+    .services-column:hover img {background-color: steelblue; display: none;}
+
+    .services-column:nth-child(odd) {margin-left: 250px;}
+
+    .services-column p{font-size:  14px;}
+
+    .services-card img {width: 50px; 
+                        height: 50px; 
+                        border: 1px solid; 
+                        padding: 5px 5px; 
+                        border-color: steelblue; 
+                        border-radius: 5px;}
+
+    .services-card {width: 300px; 
+                    height: auto; 
+                    border: 1px solid; 
+                    border-color: transparent; 
+                    border-radius: 5px; 
+                    padding-top: 15px; 
+                    padding-bottom: 15px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+    .services-column {padding: 20px 20px;float:left;}
+
+    .services-card:not(p):hover{ box-shadow: 0 4px 8px 0 steelblue, 0 6px 20px 0 steelblue; 
+                                 color: steelblue;}   /*svetlo okolo kariet*/
+
+/*ABOUT*/
+
+    #about{background-color: #f7f7f7; overflow:auto;}
+    
+    #about .about-item:nth-child(odd) img{float:left;}      /* prvy obrazok vlavo*/
+    #about .about-item:nth-child(even) img{float:right;}    /* druhy obrazok vpravo*/
+
+    #about img{ width: 40%; 
+                height: 40%; 
+                transition: 0.5s; 
+                float:left; 
+                padding: 80px 40px 80px 40px;}
+    #about img:hover{width: 50%; 
+                    height: 50%;  
+                    transition: 0.5s; 
+                    padding: none; }
+
+    #about .about-item:nth-child(odd) p{margin-right: auto;}     /* prvy text vpravo*/
+    #about .about-item:nth-child(even) p{margin-left: auto;}    /* druhy text vlavo*/
+
+    #about h2{margin-left: auto; 
+              padding-top: 60px; 
+              padding-left: 20px;}
+
+/*TEAM*/ 
+
+    #team { text-align: center; 
+            padding-bottom: 580px; 
+            min-width: 768px; 
+            margin: auto;}
+    #team p{ font-size:  14px;}
+
+    .team-card img{ width: 260px; 
+                    height: 250px;
+                    border-radius: 5px 5px 0px 0px; 
+                    width: 100%;}
+    .team-card{ width: 22%;  
+                height: 460px; 
+                float:left;
+                margin-left: 20px;
+                border: 1px solid;
+                border-color: transparent; 
+                border-radius: 5px; 
+                padding-bottom: 25px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+    #team .team-card:not(p):hover{ box-shadow: 0 4px 8px 0 steelblue, 0 6px 20px 0 steelblue; 
+                                   color: steelblue;}
+
+    #team{border:none; border-bottom: 1px dashed grey; }
+
+/*STATS*/
+
+    #stats{ margin-top: 60px; 
+            margin-bottom: 250px; 
+            text-align: center;}
+	#stats h3{color: white; 
+              margin-top: -10px;}
+	#stats p{color:#bfbfbf ; 
+             margin-top: -25px;
+             font-size: 14px;}
+    #stats i{ color:steelblue;
+              padding: 5px; 
+              font-size: 32px;
+              position: relative; 
+              top: -25px; 
+              background-color: white ;
+              border: 5px solid; 
+              border-color: white; 
+              border-radius: 100%}
+
+    .stats-card{border: 1px solid; 
+                border-color: #4d4d4d;
+                background-color: #4d4d4d; 
+                border-radius: 5px; 
+                width:25%; 
+                height:120px;
+                float: left; 
+                margin-left: 60px;}
+    
+    #stats :hover:not(i){background-color: steelblue;}
+
+/*PRICE*/
+
+    #price {background-color:#f7f7f7 ;}
+    #price h2{text-align: center;}
+
+    #price li:first-child{list-style: none;     /*Starting pack , Pro pack,...*/
+                          color: #4d4d4d; 
+                          font-size: 18px;}
+    #price ul { padding-left: 0px; 
+                list-style-position: inside;}
+
+    table{width: 80%; 
+          margin-left: 100px;  
+          border-spacing: 0 1em;}
+
+    th{ color:black ; 
+        text-align: left; }
+    
+    td{border-top: 1px dashed grey; 
+       border-bottom: 1px dashed grey;}
+
+    tr{color: #898989;}
+
+    tr:hover{background-color: white;
+             color: steelblue;}
+   
+    button{ padding: 15px; 
+            border-radius: 5px; 
+            border: 1px solid; 
+            color: #4d4d4d; 
+            border-color: steelblue;  }
+    button:hover{color: white; 
+                 background-color: steelblue; }
+        
+/*REFS*/ 
+
+    #refs{ border-bottom: 1px dashed grey; 
+           padding-bottom: 250px; }
+    .refs-card{ float: left; 
+                margin-left: 80px; 
+                padding: 20px; 
+                width: 30%; }
+    .refs-card img{ width: 60px; 
+                    height: 60px; 
+                    border-radius: 100%; 
+                    float: left;}
+    .refs-card h3{font-size: 18px; 
+                  color: #bfbfbf; 
+                  padding: 14px; 
+                  margin-left: 60px;}
+    
+    blockquote ::after{ content: ''; /* trojuholnik bubliny*/
+                        position: absolute; 
+                        display: block;
+                        width: 0; 
+                        z-index: 1; 
+                        border-style: solid; 
+                        border-width: 23px 24px 0 0;
+                        border-color: #4d4d4d transparent transparent transparent;
+                        bottom: -23px; 
+                        left: 13%; 
+                        margin-left: -12px;} 
+    
+    blockquote{ position: relative; /*bublina*/
+                background: #4d4d4d; 
+                color: white;
+                font-size: 18px; 
+                text-align: left; 
+                width: 300px; 
+                border-radius: 5px; 
+                padding: 15px; }
+
+    blockquote:hover{background-color: steelblue;}
+
+    blockquote:hover ::after{content: ''; /*rozsvietenie trojuholnika bubliny*/
+                             position: absolute; 
+                             display: block;
+                             width: 0; 
+                             z-index: 1; 
+                             border-style: solid; 
+                             border-width: 23px 24px 0 0;
+                             border-color: steelblue transparent transparent transparent;
+                             bottom: -23px; 
+                             left: 13%; 
+                             margin-left: -12px;}
+
+/*CONTACT*/
+
+    #contact h2{text-align: center; 
+                font-size: 40px;}
+    #contact {padding-bottom: 500px;
+              min-width: 1000px;}
+    #map{ width: 50%; 
+          height: 400px;
+          float: left;}
+
+    input{border-radius: 5px; 
+          border: 1px solid steelblue; 
+          color: steelblue; 
+          outline: none; 
+          padding: 10px; 
+          margin-left: 20px; 
+          float: left;}
+    input:focus {color: steelblue; 
+                 border: 3px solid green;}
+
+    input[name=name]{ width:20.75%}
+    input[name=email]{width:20.75% ;}
+    input[name=subject]{width:45%; 
+                        margin-top: 20px;}
+
+    input[type=submit]{ background-color: steelblue; 
+                        color: white;  
+                        width: 25%; 
+                        margin-left: 150px;
+                        margin-top: 20px;} 
+    input[type=submit]:hover{ background-color: green;}
+
+    input[type=email]:invalid{color: red;}
+
+    textarea{border-radius: 5px; 
+             border: 1px solid steelblue; 
+             color: steelblue; 
+             outline: none; 
+             padding: 10px; 
+             margin-left: 20px;  
+             float: left;   
+             width:45%; 
+             margin-top: 20px;  
+             height: 170px;}
+    textarea:focus{ color: steelblue; 
+                    border: 3px solid green;}
+
+/*footer*/
+
+    footer{ background-color: black; 
+            height:100px ; 
+            color:#898989; 
+            padding-top: 50px;
+            padding-left:20px; 
+            overflow:auto; }
+    footer span a{  color:steelblue; 
+                    margin-left: 600px;}

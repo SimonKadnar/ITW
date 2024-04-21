@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Special+Elite&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width ,initial-scale=1.0">
+
+		<title>About Geralt</title>
+		<link rel="icon" type="image/x-icon" href="./img/icon.jpg">
+	</head>
+
+	
+
+
+	<body onload="toto()">
+
+
+
+		<div id="buttons">
+			<div>
+				<button class="button1" onclick="Desktop()">Desktop</button>
+				<button class="button2" onclick="Tablet()">Tablet</button>
+				<button class="button3" onclick="Phone()">Phone</button>
+				<script>
+					function Desktop() {
+						var x = document.getElementById("big-menu");
+						x.style.display = "block";
+						var y = document.getElementById("small-menu");
+						y.style.display = "none";}
+	
+					function Tablet() {
+						var x = document.getElementById("big-menu");
+						x.style.display = "none";
+						var y = document.getElementById("small-menu");
+						y.style.display = "block";}
+	
+					function Phone() {
+						var x = document.getElementById("big-menu");
+						x.style.display = "none";
+						var y = document.getElementById("small-menu");
+						y.style.display = "block";}
+					
+					function menu() {
+						var x = document.getElementById("MENU");
+						if (x.style.display === "none"){
+						x.style.display = "block";
+						} else {
+						x.style.display = "none";}}
+	
+					function toto() {	//rozhoduje  tom cisa ma rovno zobrzit rozhranie pre telefon alebo monitor
+						var x = screen.width;
+						if (x > 450){
+						Desktop()}
+						else{Phone()}}
+				</script>
+			</div>
+		</div>
+
+
+
+
+		<main>
+			<header id="header">
+				<div id="big-menu">
+					<nav class="navigation">
+						<img src="./img/geralt_profil.png" alt="Geralt">
+						<ul>
+							<li><a href="index.html#ABOUT">ABOUT			</a></li>
+							<li><a href="index.html#EXPIRIENCE">EXPIRIENCE	</a></li>
+							<li><a href="index.html#EDUCATION">EDUCATION	</a></li>
+							<li><a href="index.html#SKILLS">SKILLS			</a></li>
+							<li><a href="index.html#INTERESTS">INTERESTS	</a></li>
+							<li><a href="index.html#AWARDS">AWARDS			</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<div id="small-menu" >
+				<h2>Menu</h2>
+				<button class="button4" onclick="menu()">|||</button>
+
+				<nav id="navigation">		
+					<div id="MENU" onloadstart="menu()">
+						<ul>
+							<li><a href="index.html#ABOUT">ABOUT			</a></li>
+							<li><a href="index.html#EXPIRIENCE">EXPIRIENCE	</a></li>
+							<li><a href="index.html#EDUCATION">EDUCATION	</a></li>
+							<li><a href="index.html#SKILLS">SKILLS			</a></li>
+							<li><a href="index.html#INTERESTS">INTERESTS	</a></li>
+							<li><a href="index.html#AWARDS">AWARDS			</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+
+			<section id="ABOUT">
+			<h1>Geralt <span class="red">of Rivia</span></h1>
+				<div id="contacts">
+					<p>Corvo Bianco, +421 543 123 987,
+						<a href="mailto:geralt@gmail.com">geralt@gmail.com</a> 
+					</p>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+					when an unknown printer took a galley of type and scrambled it to make a type
+					specimen book.
+					</p>
+
+				</div>
+				<div id="networks">
+					<p>You can follow me:</p>
+					<span id="youtube"><a href="https://www.youtube.com/user/WitcherGame"><i class="fab fa-youtube"></i></a></span>
+					<span id="facebook"><a href="https://www.facebook.com/thewitcher"><i class="fab fa-facebook"></i></a></span>
+					<span id="instagram"><a href="https://www.instagram.com/cdpred/"><i class="fab fa-instagram"></i></a></span>
+				</div>
+			</section>
+			
+			<section id="EXPIRIENCE">
+				<div class="content">
+					<h2>EXPIRIENCE</h2>
+
+					<h3>FIGHTING WITH MONSTERS AND HUMANS</h3>
+					<p>It has survived not only five centuries, but also the leap into
+						electronic typesetting, remaining essentially unchanged. </p>
+
+					<h3>ALCHEMISTRY</h3>
+					<p>It has survived not only five centuries, but also the leap into
+						electronic typesetting, remaining essentially unchanged. </p>
+
+					<h3>MAGIC</h3>
+					<p>It has survived not only five centuries, but also the leap into
+						electronic typesetting, remaining essentially unchanged. </p>
+					
+					<h3>HUNTING</h3>
+					<p>It has survived not only five centuries, but also the leap into
+						electronic typesetting, remaining essentially unchanged. </p>
+				
+						<img src="./img/show_me1.jpg" alt="Geralt on hunt">	
+					
+				</div>
+			</section>
+			<section id="EDUCATION">
+				<div class="content">
+					<h2>EDUCATION</h2>
+					<h3>KAER MORHEN</h3>
+					<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+					when an unknown printer took a galley of type and scrambled it to make a type
+					specimen book. It has survived not only five centuries, but also the leap into
+					electronic typesetting, remaining essentially unchanged. It was popularised in
+					the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+					and more recently with desktop publishing software like Aldus PageMaker including 
+					versions of Lorem Ipsum.
+					</p>
+	
+						<img src="./img/show_me2.jpg" alt="Kaer Morhen">	
+
+				</div>
+			</section>
+			<section id="SKILLS">
+				<div class="content">
+					<h2>SKILLS</h2>
+
+					<h3>FIGHTING WEAPONS</h3>
+					<p>It has survived not only five centuries, but also the leap into
+						electronic typesetting, remaining essentially unchanged. </p>
+
+					<h3>MAGIC SINGS</h3>
+					<p>It has survived not only five centuries, but also the leap into
+						electronic typesetting, remaining essentially unchanged. </p>
+	
+						<img src="./img/show_me3.jpg" alt="Geralt using igni">		
+
+				</div>
+			</section>
+			<section id="INTERESTS">
+				<div class="content">
+					<h2>INTERESTS</h2>
+					<h3>BOOKS</h3>
+					<p>It has survived not only five centuries, but also the leap into
+						electronic typesetting, remaining essentially unchanged. </p>
+					
+					<h3>COURSES</h3>
+					<p>It has survived not only five centuries, but also the leap into
+						electronic typesetting, remaining essentially unchanged. </p>
+
+					<h3>GAMBLE</h3>
+					<p>	Gwent It has survived not only five centuries, but also the leap into
+						electronic typesetting, remaining essentially unchanged. </p>
+
+						<img src="./img/show_me4.jpg" alt="Geralt playing Gwent">	
+
+				</div>
+			</section>
+			<section id="AWARDS">
+				<div class="content">
+					<h2>AWARDS</h2>
+
+					<p>Lifted the curse of Princess Adda <i class="fa fa-trophy golden"></i> </p>
+
+					<p>Order of Vitis Vinifera Toussaint's highest honor <i class="fa fa-trophy golden"></i> </p>
+
+					<p>Win Olgierd back his soul <i class="fa fa-trophy golden"></i> </p>
+	
+						<img src="./img/show_me5.jpg" alt="Geralt get reward">	
+
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

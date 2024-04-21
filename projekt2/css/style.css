@@ -1,0 +1,79 @@
+/*
+* autor: xkadna00
+*/
+
+/* Obecne naszavenia stranky */
+*{ font-family: "PT Sans"; line-height: 1.7;}
+*:not(p,#buttons,button){margin: auto;}
+
+h1{font-size: 70px; padding-top: 200px; min-width: 300px;}
+
+.red{color: red;}       /* ofarbenie hlavneho napisu na cervnu a ciernu*/
+
+h2{font-size: 45px; color: red; min-width: 300px;}
+p{font-size: 18px; padding-top: 10px; border-right: 200px; width: 60%; min-width: 300px;}
+a{ text-decoration: none;} 
+li{ list-style-type: none;}
+html {scroll-behavior: smooth;}
+
+.content{padding-top: 20px; border-bottom: 2px solid; border-color: red;}
+.content img{width: 30%;}
+
+.golden { color: gold;} /* zlate pohare */
+
+/*BUTTONS*/
+#buttons{ border-bottom: 2px solid; color: red; background-color: black; min-width: 300px;}     /*pozadie tlacitok*/
+#buttons div{margin-left: auto;margin-right: auto; max-width: 300px;} /* centrovanie tlacitok na stred strany */
+
+button{color:white; font-size: 20px; background-color: black; border: 0px;
+        margin-left: 10px; padding-top: 15px; padding-bottom: 15px;}
+
+button:hover{color: red; 
+            border: 1px solid; border-top: 0px; border-bottom: 0px;     /* zvysle biele ciary */
+            border-color: white; transition: 0.5s;}
+
+/*big-menu*/
+#header { position: sticky; top:0; margin-right: 20px;}         /* prinutie hlavneho menu panelu na bok stranky */
+#big-menu{background-color: black; width: 16%; height:4600px; 
+        float: left;            /* umoznenie aby text mohol byt vedla menu*/ 
+        margin-right: 20px;     /* posunutie textu na pravo o dmenu*/ 
+        min-width: 300px; border-right: 2px solid; color:red;} 
+
+#header img{width: 220px; height: 220px; border-radius: 100%; padding: 2px; background-color: red;
+            margin-top: 15%; display: block; margin-left: auto; margin-right: auto;}    /* Geraltov profil*/
+
+#header ul{padding: 0; list-style-type: none; margin: auto; padding-top: 20px; text-align: center;}     /* centrovanie navigacie */
+
+#header li{transition: 0.5s; margin: auto; padding: 5px 40px; margin-top: 5px;}
+#header li:hover{color:white; transition: 0.5s; border: 1px solid; border-right: 0px; border-left: 0px;}
+
+#header a{font-family: "Arial";font-size: 25px;color: white;}
+#header li:hover a{color:red; transition: 0.5s;}
+
+/*small-menu*/    
+#small-menu {position: sticky; top:0; background-color: black; color: white; padding-bottom: 80px; min-width: 300px;}   /* umiestnenie maleho menu*/
+#small-menu h2{padding: 5px 40px; float: left; color: white;}
+#small-menu button{font-size: 40px;position:absolute; right:20px; padding-top: 5px; padding-bottom: 5px;}
+#small-menu button:hover{color: red;border: 0px;}
+
+#MENU ul{padding: 0; list-style-type: none; padding-top: 80px;}
+
+#MENU li{transition: 0.5s; padding: 5px 40px; margin-top: 5px;}
+#MENU li:hover{color:white; transition: 0.5s; border: 1px solid; border-right: 0px; border-left: 0px;}
+
+#MENU a{font-family: "Arial";font-size: 25px;color: white;}
+#MENU li:hover a{color:red; transition: 0.5s;}
+
+/*ABOUT...*/
+
+#ABOUT{padding-bottom: 20px;border-bottom: 2px solid; border-color: red;}
+
+#contacts p:first-child{font-size: 25px; width: 100%;}  /* bydlisko, tel cislo a mail*/
+#contacts a{color: red;}
+#networks i{font-size: 35px; color:black; padding: 0px 10px; margin-top: 10px;} /* e-odkazy */
+#networks i:hover{color:red;}
+
+
+
+
+
